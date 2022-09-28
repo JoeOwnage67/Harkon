@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!--===== Dusk Carbine (AR) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DF_Bullet_Dusk_Carbine</defName>
+    <label>Dusk Carbine bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DF_Dusk_BaseHumanMakeableGun">
+    <defName>DF_Dusk_Carbine</defName>
+    <label>Dusk Carbine</label>
+    <description>One of the few rifles to use the 9x39 subsonic rifle round, the Dusk Carbine is a unique and powerful weapon. The Dusk Carbine boasts a massive magazine and is supremely accurate. The Rifle is set with a small weight in the stock of the gun to help reduce felt recoil and distribute the gun's weight evenly, allowing a survivor to sustain better accuracy.</description>
+    <graphicData>
+      <texPath>Things/Weapons/DF_Dusk_Carbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.61</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Silver>60</Silver>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DF_Bullet_Dusk_Carbine</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>35</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>DF_Shot_Dusk_Carbine</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RN_DuskCarbine_Noob</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Dusk Enforcer (Revolver) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DF_Bullet_Dusk_Enforcer</defName>
+    <label>Dusk Enforcer bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>19</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DF_Dusk_BaseHumanMakeableGun">
+    <defName>DF_Dusk_Enforcer</defName>
+    <label>Dusk Enforcer</label>
+    <description>This mysterious revolver is another part of the Dusk Gear set, created by AdminPwn himself for only the best survivors. Its bizarre cylinder gives it a much higher capacity than other revolvers while allowing quick reloads, making the Dusk Enforcer superior to most other available handguns.</description>
+    <graphicData>
+      <texPath>Things/Weapons/DF_Dusk_Enforcer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <soundInteract>Interact_Revolver</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.56</AccuracyMedium>
+      <AccuracyLong>0.48</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Silver>30</Silver>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DF_Bullet_Dusk_Enforcer</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>30</range>
+        <soundCast>DF_Shot_Dusk_Enforcer</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RN_DuskEnforcer_Noob</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Dusk Launcher (Launcher) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DF_Bullet_Dusk_Launcher</defName>
+    <label>Dusk launcher blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.1</explosionRadius>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DF_Dusk_BaseHumanMakeableGun">
+    <defName>DF_Dusk_Launcher</defName>
+    <label>Dusk Launcher</label>
+    <description>Outfitted with a huge, 30-round revolving drum system, the Dusk Launcher rains fire upon the city. Its ability to pump out so many 40mm grenades at such a rate and power assures its status as one of the best grenade launchers available.</description>
+    <graphicData>
+      <texPath>Things/Weapons/DF_Dusk_Launcher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.4</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Silver>75</Silver>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DF_Bullet_Dusk_Launcher</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>30</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DF_Shot_Dusk_Launcher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RN_Launcher_Noob</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Dusk MAG (LMG) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DF_Bullet_Dusk_MAG</defName>
+    <label>Dusk MAG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>46</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DF_Dusk_BaseHumanMakeableGun">
+    <defName>DF_Dusk_MAG</defName>
+    <label>Dusk MAG</label>
+    <description>The ultimate collaboration between the engineers of AdminPwn and officials of the Fabrique Nationale d'Herstal, hence the MAG signature name. Combining lightning-speed feeder, easy reload mechanism, ultra firepower, this weapon is the third strongest machine gun of Fairview, with power exceeding the Vulcan itself.</description>
+    <graphicData>
+      <texPath>Things/Weapons/DF_Dusk_MAG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>39000</WorkToMake>
+      <Mass>8.5</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Silver>75</Silver>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DF_Bullet_Dusk_MAG</defaultProjectile>
+        <warmupTime>1.6</warmupTime>
+        <range>33</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>DF_Shot_Dusk_MAG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RNGun_DuskMAG_Noob</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Dusk SMG (SMG LOL)=====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DF_Bullet_Dusk_SMG</defName>
+    <label>Dusk SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DF_Dusk_BaseHumanMakeableGun">
+    <defName>DF_Dusk_SMG</defName>
+    <label>Dusk SMG</label>
+    <description>One of the most powerful submachine guns available to any survivor lucky enough to get one, the Dusk SMG is perfect for going up against even the largest swarms. Being capable of dealing out more damage per shot than the similar K-50M or Criss Victor, this powerful weapon combines the speed and power of an assault rifle with the compactness and (relative) cheapness of an SMG. One of the biggest appeals of this weapon, and also one of the most obvious differences than most Dusk gear, is the gun's lightweight. Made with a presumably expensive, unknown metal, this gun only weighs about 4 pounds with a full magazine. Even the weakest survivor can carry it easily, and the strength of the metal ensures that it won't explode or warp from an extensive sustained fire.</description>
+    <graphicData>
+      <texPath>Things/Weapons/DF_Dusk_SMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Silver>45</Silver>
+      <Plasteel>45</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DF_Bullet_Dusk_SMG</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>24</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>DF_Shot_Dusk_SMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RN_DuskCarbine_Noob</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Dusk Striker (Shotgun) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DF_Bullet_Dusk_Striker</defName>
+    <label>Dusk Striker blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DF_Dusk_BaseHumanMakeableGun">
+    <defName>DF_Dusk_Striker</defName>
+    <label>Dusk Striker</label>
+    <description>A true feat of post-apocalyptic engineering, the Dusk Striker is nearly the most powerful shotgun available. With a huge buffer tube, and a reliable automatic fire system, the Dusk Striker delivers an unending lead storm of 12-gauge to anything on the wrong side of this powerful weapon.</description>
+    <graphicData>
+      <texPath>Things/Weapons/DF_Dusk_Striker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.57</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Silver>70</Silver>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DF_Bullet_Dusk_Striker</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>18</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>DF_Shot_Dusk_Striker</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RN_DuskStriker_Noob</li>
+    </weaponTags>
+  </ThingDef>
+
+</Defs>

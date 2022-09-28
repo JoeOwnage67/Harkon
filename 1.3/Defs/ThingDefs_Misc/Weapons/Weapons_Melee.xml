@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    
+    <!--===== Dusk Kris (Shortsword)=====-->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>DF_Dusk_Kris</defName>
+        <label>Dusk Kris</label>
+        <description>A flame-shaped blade of Indonesian origin, forged by AdminPwn himself only for the most dedicated survivors.</description>
+        <graphicData>
+            <texPath>Things/Weapons/DF_Dusk_Kris</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>17000</WorkToMake>
+            <Mass>1.2</Mass>
+        </statBases>
+        <costList>
+            <Silver>50</Silver>
+            <Plasteel>50</Plasteel>
+        </costList>
+        <tools>
+            <li>
+                <label>Dusk Kris handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+            <li>
+                <label>Dusk Kris point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+            <li>
+                <label>Dusk Kris edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <weaponTags Inherit="False">
+            <li>RN_DuskRazor_Noob</li>            
+        </weaponTags>
+    </ThingDef>
+
+    <!--===== Dusk Razor (Longsword)=====-->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>DF_Dusk_Razor</defName>
+        <label>Dusk Razor</label>
+        <description>The Dusk Razor is a strange and powerful falchion-like blade. It appears to be made of an unknown metal, allowing it to remain relatively lightweight and comfortable, especially in the heat of combat. This rare and powerful monster of a blade is only forged by AdminPwn himself on demand, and even then only if it is earned, for the most dedicated survivors.</description>
+        <graphicData>
+            <texPath>Things/Weapons/DF_Dusk_Razor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>23000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <costList>
+            <Silver>100</Silver>
+            <Plasteel>100</Plasteel>
+        </costList>
+        <tools>
+            <li>
+                <label>Dusk Razor handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+            <li>
+                <label>Dusk Razor point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>Dusk Razor edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <weaponTags Inherit="False">
+            <li>RN_DuskRazor_Noob</li>            
+        </weaponTags>
+    </ThingDef>
+
+    <!--===== Dusk Saw (Saw LOL)=====-->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>DF_Dusk_Saw</defName>
+        <label>Dusk Saw</label>
+        <description>The Dusk Saw is the most powerful chainsaw known to survivors. Forged by AdminPwn for the Top survivors, this beast of a machine can bifurcate any mutant zombie in mere seconds. Equipped with a 16 HP engine, a push-button starter, a motor capable of 500 rpm, and a belt lined with sharp, diamond-edged 1-inch teeth, the Dusk Saw is arguably one of the most powerful chainsaws known to mankind. Such power is obviously not for a novice survivor, and only someone with extensive experience in combat and superhuman strength could possibly use it and not end up impaling him or herself.</description>
+        <graphicData>
+            <texPath>Things/Weapons/DF_Dusk_Saw</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>5</equippedAngleOffset>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>3</Mass>
+        </statBases>
+        <costList>
+            <Silver>150</Silver>
+            <Plasteel>100</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <tools>
+            <li>
+                <label>Dusk Saw chain</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>0.1</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <weaponTags Inherit="False">
+            <li>RN_Grinder_Noob</li>
+        </weaponTags>
+    </ThingDef>
+
+</Defs>
