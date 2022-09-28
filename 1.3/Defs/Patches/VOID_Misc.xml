@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[RH] Faction: VOID</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RNGun_DuskMAG"]/label</xpath>
+                    <value>
+                        <label>X-Dusk MAG</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RNGun_DuskStrikerS"]/label</xpath>
+                    <value>
+                        <label>X-Dusk Striker</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RNGun_DuskEnforcer"]/label</xpath>
+                    <value>
+                        <label>X-Dusk Enforcer</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RNGun_DuskCarbine"]/label</xpath>
+                    <value>
+                        <label>X-Dusk Carbine</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RHMelee_DFDuskBlade"]/label</xpath>
+                    <value>
+                        <label>X-Dusk Razor</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
