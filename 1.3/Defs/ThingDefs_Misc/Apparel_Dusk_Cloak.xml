@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Dusk Cloak -->
+    <ThingDef ParentName="ApparelMakeableBase" Name="DF_Cloak">
+        <defName>DF_Dusk_Cloak</defName>
+        <label>Dusk Cloak</label>
+        <description>This Cloak covering can keep a wearer warm and dry. Materials ranging from leather to Hyperweave, it can help shed water away from the head and back of a survivor so they stay warm and healthy. level, however it comes at a higher cost for being so experimental and ambitious.</description>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit = "False">
+            <li>Duskapparel</li>
+        </thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Apparel/Cloak/Cloak_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>170</MaxHitPoints>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>2</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.00</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Cloak/Cloak</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags Inherit = "False">                
+                <li>RHApparel_DFCloak_Black</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <!-- Dusk Winter Cloak -->
+    <ThingDef ParentName="DF_Cloak" Name="DF_Cloak_Fur">
+        <defName>DF_Dusk_Cloak_Fur</defName>
+        <label>Dusk Winter Cloak</label>
+        <graphicData>
+            <texPath>Things/Apparel/Cloak/Cloak_Fur/Cloak_Fur_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>2</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Cloak/Cloak_Fur/Cloak_Fur</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DF_Cloak_Fur">
+        <defName>DF_Dusk_Cloak_Fur_Gold</defName>
+        <label>Dusk Winter Cloak (Golden)</label>
+        <graphicData>
+            <texPath>Things/Apparel/Cloak/Cloak_Fur/Gold/Cloak_Fur_UI</texPath>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Cloak/Cloak_Fur/Gold/Cloak_Fur</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DF_Cloak_Fur">
+        <defName>DF_Dusk_Cloak_Fur_Black</defName>
+        <label>Dusk Winter Cloak (Black)</label>
+        <graphicData>
+            <texPath>Things/Apparel/Cloak/Cloak_Fur/Black/Cloak_Fur_UI</texPath>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Cloak/Cloak_Fur/Black/Cloak_Fur</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DF_Cloak_Fur">
+        <defName>DF_Dusk_Cloak_Fur_White</defName>
+        <label>Dusk Winter Cloak (White)</label>
+        <graphicData>
+            <texPath>Things/Apparel/Cloak/Cloak_Fur/White/Cloak_Fur_UI</texPath>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Cloak/Cloak_Fur/White/Cloak_Fur</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+</Defs>

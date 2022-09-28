@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Dusk Helmet -->
+    <ThingDef Name="DF_Helmet" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>DF_Dusk_Research</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories Inherit = "False">
+            <li>Duskapparel</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <generateCommonality>2</generateCommonality>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <ThingDef ParentName="DF_Helmet">
+        <defName>DF_Dusk_Helmet</defName>
+        <label>Dusk Helmet</label>
+        <description>The Dusk Helmet is a rare and mysterious item. It's extremely sturdy and lightweight, surviving a Titan's fists without a scratch.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Helmet/Dusk_Helmet_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <statBases>
+            <WorkToMake>21000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <wornGraphicPath>Things/Apparel/Helmet/Dusk_Helmet</wornGraphicPath>
+            <tags Inherit = "False">
+                <li>RNApparel_ReactiveHelmet_VOID</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <ToxicSensitivity>-100</ToxicSensitivity>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+    </ThingDef>
+
+</Defs>

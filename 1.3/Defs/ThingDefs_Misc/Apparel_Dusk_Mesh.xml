@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Dusk Cloak -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+  		<defName>DF_Dusk_Mesh</defName>
+  		<label>Dusk Mesh</label>
+  		<description>The Dusk Mesh is a rarely seen armour, made almost purely out of synthetic black fibers of an unknown yet lightweight material, which provides a lot of security while obstructing its user not much more than air itself.</description>
+  		<techLevel>Spacer</techLevel>
+  		<tradeability>Sellable</tradeability>
+  		<generateCommonality>0</generateCommonality>
+  		<generateAllowChance>0</generateAllowChance>
+  	  <graphicData>
+        <texPath>Things/Apparel/Dusk_Mesh_UI</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+      </graphicData>
+      <statBases>
+  		  <WorkToMake>10000</WorkToMake>
+  	  	<MaxHitPoints>280</MaxHitPoints>
+  	  	<Mass>2.5</Mass>
+        <ArmorRating_Sharp>0.99</ArmorRating_Sharp>
+    		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+    		<ArmorRating_Heat>0.50</ArmorRating_Heat>
+    		<Insulation_Cold>15</Insulation_Cold>
+    		<Insulation_Heat>15</Insulation_Heat>
+  		  <EquipDelay>3</EquipDelay>
+      </statBases>
+      <equippedStatOffsets>
+  		<ToxicSensitivity>-0.25</ToxicSensitivity>
+  		<MoveSpeed>0.30</MoveSpeed>
+  		<PainShockThreshold>0.15</PainShockThreshold>
+  		<SocialImpact>0.05</SocialImpact>
+  		<HuntingStealth>0.30</HuntingStealth>
+  	</equippedStatOffsets>
+      <costList>
+  		<Synthread>20</Synthread>
+  		<ComponentIndustrial>1</ComponentIndustrial>
+      </costList>
+      <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>10</costStuffCount>
+      <recipeMaker>
+  		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+  		<researchPrerequisite>Fabrication</researchPrerequisite>
+  		<skillRequirements>
+  			<Crafting>7</Crafting>
+  		</skillRequirements>
+  		<recipeUsers Inherit="False">
+  			<li>FabricationBench</li>
+          </recipeUsers>
+      </recipeMaker>
+      <apparel>
+  		  <bodyPartGroups>
+  			  <li>Neck</li>
+  		   	<li>Torso</li>
+  		   	<li>Shoulders</li>
+  		  	<li>Waist</li>
+  		    <li>Arms</li>
+  			  <li>Legs</li>
+  		  </bodyPartGroups>
+  		<wornGraphicPath>Things/Apparel/Dusk_Mesh</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+  		<layers>
+  			<li>Middle</li>
+  		</layers>
+  		<tags>
+  			<li>Dusk_Mesh</li>
+  		</tags>
+  		<defaultOutfitTags>
+  			<li>Soldier</li>
+  		</defaultOutfitTags>
+  		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+  	</apparel>
+  	<thingCategories Inherit="False">
+  		<li>Apparel</li>
+  	</thingCategories>
+  </ThingDef>
+
+</Defs>
