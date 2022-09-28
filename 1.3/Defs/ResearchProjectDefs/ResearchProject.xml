@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>DF_Dusk_Research</defName>
+        <label>Dusk technology</label>
+        <description>Unlock the secrets of the Dusk weaponsmiths and learn to craft their powerfull equipment</description>
+        <baseCost>3500</baseCost>
+        <prerequisites>
+            <li>Fabrication</li>
+        </prerequisites>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>15.00</researchViewX>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+</Defs>
