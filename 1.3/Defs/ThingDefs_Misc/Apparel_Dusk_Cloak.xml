@@ -40,7 +40,7 @@
             </bodyPartGroups>
             <wornGraphicPath>Things/Apparel/Cloak/Cloak</wornGraphicPath>
             <layers>
-                <li>Shell</li>
+                <li>VFEC_OuterShell</li>
             </layers>
             <tags Inherit = "False">                
                 <li>RHApparel_DFCloak_Black</li>
